@@ -1,6 +1,7 @@
 # CS315 Final Project: Tower Heist Escape
 ### By: Austin Foster
 
+<<<<<<< HEAD
 
 # Project Report
 
@@ -38,3 +39,9 @@
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
 # Third-Party Assets
+=======
+- [X] D-1:  The pitch or plan final submission are made after the deadline, and both are approved.
+- [X] D-2: You have registered with a team on Canvas, even if it is a team of one member.
+- [X] C-1: The pitch is submitted before the deadline, but the plan is submitted after the deadline, and both are approved.
+- [X] A-1: The pitch and plan are submitted before the deadline and approved.
+>>>>>>> d5fcaa1387c283f1757f0ab007601ca9961e4fd7
