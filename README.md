@@ -37,3 +37,9 @@
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
 # Third-Party Assets
+
+Images are from "RPG Base". Created by Kenny.nl, CC0 1.0 Universal.
+Source: https://www.kenney.nl/assets/rpg-base
+
+Images are from "Adventure Sprite Sheet". Created by PixElthen, CC Attribution 4.0 International.
+Source: https://opengameart.org/content/pixel-art-adventurer-sprites
