@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ground.png-af37ecd91bad0fb8a0e46ffd8c02b7fe.stex"
+path="res://.import/Gems.png-b549f0732e65744c3fdca6f1d3ac5218.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/Ground.png"
-dest_files=[ "res://.import/Ground.png-af37ecd91bad0fb8a0e46ffd8c02b7fe.stex" ]
+source_file="res://assets/Items/Gems.png"
+dest_files=[ "res://.import/Gems.png-b549f0732e65744c3fdca6f1d3ac5218.stex" ]
 
 [params]
 

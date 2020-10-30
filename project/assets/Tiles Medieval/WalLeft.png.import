@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WallSide.png-c8c3e89dc3301a43173c25f5ab7d2f08.stex"
+path="res://.import/WalLeft.png-2eaeadca86eb9de20da5ef4f10963f26.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/WallSide.png"
-dest_files=[ "res://.import/WallSide.png-c8c3e89dc3301a43173c25f5ab7d2f08.stex" ]
+source_file="res://assets/Tiles Medieval/WalLeft.png"
+dest_files=[ "res://.import/WalLeft.png-2eaeadca86eb9de20da5ef4f10963f26.stex" ]
 
 [params]
 

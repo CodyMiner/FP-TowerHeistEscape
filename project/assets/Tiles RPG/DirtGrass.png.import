@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DirtGrass.png-df351aee67068b0c00605c80afa11a75.stex"
+path="res://.import/DirtGrass.png-bfeeac7f8418e7a655546658508d0394.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/DirtGrass.png"
-dest_files=[ "res://.import/DirtGrass.png-df351aee67068b0c00605c80afa11a75.stex" ]
+source_file="res://assets/Tiles RPG/DirtGrass.png"
+dest_files=[ "res://.import/DirtGrass.png-bfeeac7f8418e7a655546658508d0394.stex" ]
 
 [params]
 

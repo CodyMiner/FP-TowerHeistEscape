@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sky.png-bf094c4c827599e44e90a16e6500018b.stex"
+path="res://.import/WallRight.png-ddcc652183a13e8090dec1beecc5363f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/Sky.png"
-dest_files=[ "res://.import/Sky.png-bf094c4c827599e44e90a16e6500018b.stex" ]
+source_file="res://assets/Tiles Medieval/WallRight.png"
+dest_files=[ "res://.import/WallRight.png-ddcc652183a13e8090dec1beecc5363f.stex" ]
 
 [params]
 
