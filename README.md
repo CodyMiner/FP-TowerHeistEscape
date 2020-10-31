@@ -38,8 +38,21 @@
 
 # Third-Party Assets
 
-Images are from "RPG Base". Created by Kenny.nl, CC0 1.0 Universal.
+Images are from "RPG Base". Created by Kenny.nl, CC0 1.0 Universal
 Source: https://www.kenney.nl/assets/rpg-base
+
+Images are from "Platformer Pack Medieval". Created by Kenny.nl, CC0 1.0 Universal
+https://www.kenney.nl/assets/platformer-pack-medieval
 
 Images are from "Adventure Sprite Sheet". Created by PixElthen, CC Attribution 4.0 International.
 Source: https://opengameart.org/content/pixel-art-adventurer-sprites
+
+Images are from "Tiny-Skelly". Created by AntumDeluge, CC Attribution 3.0 Unported.
+Source: https://opengameart.org/content/tiny-skelly-rpg-enemies-rework
+
+Images are from "Gems". Created by Jianhui999, CC Attribution-ShareAlike 3.0 Unported
+Source: https://opengameart.org/content/32x32-pixel-gems
+
+Blackwood Castle Font. Created by Dieter Steffmann. For non-commercial use.
+Download Source: https://www.dafont.com/blackwood-castle.font
+Credit: http://www.steffmann.de/wordpress/
