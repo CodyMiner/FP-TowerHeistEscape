@@ -1,0 +1,91 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Player/Adventurer Sprite Sheet v1.1.png" type="Texture" id=1]
+[ext_resource path="res://src/Player.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fall"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 67 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.7, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 11, 10, 11 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "walk"
+length = 0.75
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 12, 13, 14, 15, 16, 17, 18, 19 ]
+}
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 8.34142
+height = 13.1687
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 2.53257, -7.19093 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+normal_map = ExtResource( 1 )
+vframes = 16
+hframes = 13
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/fall = SubResource( 1 )
+anims/idle = SubResource( 2 )
+anims/walk = SubResource( 3 )
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource( 4 )
+
+[node name="Camera" type="Camera2D" parent="."]
+z_as_relative = false
+offset = Vector2( 0, -50 )
+current = true
+zoom = Vector2( 0.6, 0.6 )
+drag_margin_left = 0.0
+drag_margin_top = 0.0
+drag_margin_right = 0.0
+drag_margin_bottom = 0.0
+
+[node name="Ray" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 16 )
