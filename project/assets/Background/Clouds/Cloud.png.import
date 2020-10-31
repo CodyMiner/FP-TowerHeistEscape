@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WallRight.png-ddcc652183a13e8090dec1beecc5363f.stex"
+path="res://.import/Cloud.png-c05dd6c6b05f8c94cd88f569afcf2c69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles Medieval/WallRight.png"
-dest_files=[ "res://.import/WallRight.png-ddcc652183a13e8090dec1beecc5363f.stex" ]
+source_file="res://assets/Background/Clouds/Cloud.png"
+dest_files=[ "res://.import/Cloud.png-c05dd6c6b05f8c94cd88f569afcf2c69.stex" ]
 
 [params]
 

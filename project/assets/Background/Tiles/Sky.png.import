@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DirtGrass.png-bfeeac7f8418e7a655546658508d0394.stex"
+path="res://.import/Sky.png-c8485e6f5fb249c77f0e42a85136c7fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles RPG/DirtGrass.png"
-dest_files=[ "res://.import/DirtGrass.png-bfeeac7f8418e7a655546658508d0394.stex" ]
+source_file="res://assets/Background/Tiles/Sky.png"
+dest_files=[ "res://.import/Sky.png-c8485e6f5fb249c77f0e42a85136c7fc.stex" ]
 
 [params]
 

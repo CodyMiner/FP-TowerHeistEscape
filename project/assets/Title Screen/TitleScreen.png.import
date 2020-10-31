@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DoorClosed.png-7cb3b0d7a02e81889f888094bec2ba41.stex"
+path="res://.import/TitleScreen.png-7707c02d84bd04ec4d25850a72b65cf1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles Medieval/DoorClosed.png"
-dest_files=[ "res://.import/DoorClosed.png-7cb3b0d7a02e81889f888094bec2ba41.stex" ]
+source_file="res://assets/Title Screen/TitleScreen.png"
+dest_files=[ "res://.import/TitleScreen.png-7707c02d84bd04ec4d25850a72b65cf1.stex" ]
 
 [params]
 

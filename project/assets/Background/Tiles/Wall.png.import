@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Platform.png-fa92cd0f07888fe20e097f7684e3b6c1.stex"
+path="res://.import/Wall.png-157328a9d45f83ccbb5c4a433854ed53.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles Medieval/Platform.png"
-dest_files=[ "res://.import/Platform.png-fa92cd0f07888fe20e097f7684e3b6c1.stex" ]
+source_file="res://assets/Background/Tiles/Wall.png"
+dest_files=[ "res://.import/Wall.png-157328a9d45f83ccbb5c4a433854ed53.stex" ]
 
 [params]
 

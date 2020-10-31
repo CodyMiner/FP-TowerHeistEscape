@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WalLeft.png-2eaeadca86eb9de20da5ef4f10963f26.stex"
+path="res://.import/DoorOpen.png-e43bba5a553d6bbe0c2020423ec48720.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles Medieval/WalLeft.png"
-dest_files=[ "res://.import/WalLeft.png-2eaeadca86eb9de20da5ef4f10963f26.stex" ]
+source_file="res://assets/Background/Doors/DoorOpen.png"
+dest_files=[ "res://.import/DoorOpen.png-e43bba5a553d6bbe0c2020423ec48720.stex" ]
 
 [params]
 

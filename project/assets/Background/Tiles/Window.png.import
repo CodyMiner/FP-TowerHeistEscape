@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dirt.png-2a7d5c3c7a0637b277f2c0c4a41a591d.stex"
+path="res://.import/Window.png-f7c9821c7bb0d2a91bd65b33a6b06081.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles RPG/Dirt.png"
-dest_files=[ "res://.import/Dirt.png-2a7d5c3c7a0637b277f2c0c4a41a591d.stex" ]
+source_file="res://assets/Background/Tiles/Window.png"
+dest_files=[ "res://.import/Window.png-f7c9821c7bb0d2a91bd65b33a6b06081.stex" ]
 
 [params]
 
