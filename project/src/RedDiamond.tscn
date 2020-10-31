@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Items/Gems.png" type="Texture" id=1]
+[ext_resource path="res://src/RedDiamond.gd" type="Script" id=2]
+
+[node name="RedDiamond" type="Area2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+vframes = 6
+hframes = 5
+frame = 5
+
+[node name="Hitbox" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -0.0787277, 10.5431, -12.908, -2.09891, -13.0016, -6.9684, -0.266014, -10.3396, 12.376, -6.9684, 12.5632, -1.72433 )
+[connection signal="body_entered" from="." to="." method="_on_RedDiamond_body_entered"]
