@@ -70,7 +70,7 @@ script = ExtResource( 5 )
 [node name="MovingBackground" type="TextureRect" parent="."]
 material = SubResource( 2 )
 margin_top = 2.0
-margin_right = 1649.0
+margin_right = 1601.0
 margin_bottom = 900.0
 texture = ExtResource( 1 )
 expand = true
