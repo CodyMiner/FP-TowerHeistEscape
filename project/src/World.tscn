@@ -279,9 +279,6 @@ position = Vector2( 27.6782, 4316.85 )
 scale = Vector2( 0.720577, 1.09415 )
 texture = ExtResource( 9 )
 
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 27.8032, 4336.11 )
-
 [node name="Skeletons" type="Node" parent="."]
 
 [node name="Enemy" parent="Skeletons" instance=ExtResource( 6 )]
@@ -322,6 +319,9 @@ position = Vector2( 739.185, 3700.57 )
 
 [node name="RedDiamond" parent="RedDiamonds" instance=ExtResource( 4 )]
 position = Vector2( 723.39, 3498.19 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 27.8032, 4336.11 )
 [connection signal="body_shape_entered" from="Skeletons/Enemy" to="." method="_on_Enemy_body_shape_entered"]
 [connection signal="body_shape_entered" from="Skeletons/Enemy2" to="." method="_on_Enemy_body_shape_entered"]
 [connection signal="body_shape_entered" from="Skeletons/Enemy3" to="." method="_on_Enemy_body_shape_entered"]
