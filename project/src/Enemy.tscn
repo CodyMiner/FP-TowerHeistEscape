@@ -22,7 +22,7 @@ tracks/0/keys = {
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 8.50554
-height = 17.8357
+height = 14.242
 
 [node name="Enemy" type="Area2D"]
 script = ExtResource( 2 )
