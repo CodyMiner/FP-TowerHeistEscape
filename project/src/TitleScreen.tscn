@@ -344,5 +344,5 @@ __meta__ = {
 
 [node name="ThemeLoop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
-volume_db = -20.0
+volume_db = -30.0
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
