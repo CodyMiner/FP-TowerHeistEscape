@@ -59,3 +59,9 @@ Source: https://opengameart.org/content/industrial-traps-2d-sidescroller
 
 Images are from "Heart". Created by shinzohotoroki. CC0 1.0 Universal
 Source: https://opengameart.org/content/heart-3
+
+Sounds are from "FreeSound". Created by joshuaempyre, CC0 1.0 Universal.
+Source: https://freesound.org/people/joshuaempyre/sounds/251461/
+
+Sounds are from "FreeSound". Created by theojt, CC0 1.0 Universal.
+https://freesound.org/people/theojt/sounds/510955/
