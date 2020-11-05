@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://assets/Title Screen/TitleScreenBackground.png" type="Texture" id=1]
 [ext_resource path="res://src/ScrollingBackground.gd" type="Script" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://assets/Player/Adventurer Sprite Sheet v1.1.png" type="Texture" id=4]
 [ext_resource path="res://src/TitleScreen.gd" type="Script" id=5]
 [ext_resource path="res://assets/Title Screen/StartGameButton.png" type="Texture" id=6]
+[ext_resource path="res://assets/Enemies/Saw.png" type="Texture" id=7]
+[ext_resource path="res://assets/Enemies/Skeleton.png" type="Texture" id=8]
+[ext_resource path="res://assets/Items/Heart.png" type="Texture" id=9]
+[ext_resource path="res://assets/Items/Gems.png" type="Texture" id=10]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -42,26 +46,26 @@ tracks/0/keys = {
 font_path = "res://assets/Font/BlackCastleMF.ttf"
 
 [sub_resource type="DynamicFont" id=5]
+size = 18
 outline_size = 1
-outline_color = Color( 0.00784314, 0.00392157, 0.00392157, 1 )
-use_mipmaps = true
-use_filter = true
-extra_spacing_char = 1
-extra_spacing_space = 4
-font_data = SubResource( 4 )
-
-[sub_resource type="DynamicFontData" id=6]
-font_path = "res://assets/Font/BlackCastleMF.ttf"
-
-[sub_resource type="DynamicFont" id=7]
-size = 23
-outline_size = 2
 outline_color = Color( 0, 0, 0, 1 )
 use_mipmaps = true
 use_filter = true
 extra_spacing_top = 1
 extra_spacing_char = 1
 extra_spacing_space = 1
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFontData" id=6]
+font_path = "res://assets/Font/BlackCastleMF.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+outline_size = 1
+outline_color = Color( 0.00784314, 0.00392157, 0.00392157, 1 )
+use_mipmaps = true
+use_filter = true
+extra_spacing_char = 1
+extra_spacing_space = 4
 font_data = SubResource( 6 )
 
 [node name="TitleScreen" type="Node"]
@@ -69,9 +73,10 @@ script = ExtResource( 5 )
 
 [node name="MovingBackground" type="TextureRect" parent="."]
 material = SubResource( 2 )
-margin_top = 2.0
-margin_right = 1601.0
-margin_bottom = 900.0
+margin_left = 2.4613
+margin_top = -0.9375
+margin_right = 1603.46
+margin_bottom = 897.063
 texture = ExtResource( 1 )
 expand = true
 stretch_mode = 2
@@ -82,54 +87,254 @@ __meta__ = {
 scroll_speed = 0.125
 
 [node name="TitleBackground" type="ColorRect" parent="."]
-margin_left = 464.0
-margin_top = 24.0
-margin_right = 1168.0
-margin_bottom = 136.0
+margin_left = 560.0
+margin_top = 16.0
+margin_right = 1072.0
+margin_bottom = 96.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Title" type="Sprite" parent="."]
-position = Vector2( 817.063, 80 )
-scale = Vector2( 0.513486, 0.442256 )
-texture = ExtResource( 3 )
+[node name="TitleBackground2" type="ColorRect" parent="."]
+margin_left = 600.0
+margin_top = 424.0
+margin_right = 1568.0
+margin_bottom = 864.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="PlayerSprite" type="Sprite" parent="."]
-position = Vector2( 834.615, 342.414 )
+[node name="TitleBackground6" type="ColorRect" parent="."]
+margin_left = 1072.0
+margin_top = 415.0
+margin_right = 1083.0
+margin_bottom = 864.0
+color = Color( 0.345098, 0.345098, 0.345098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleBackground3" type="ColorRect" parent="."]
+margin_left = 784.0
+margin_top = 448.0
+margin_right = 880.0
+margin_bottom = 484.0
+color = Color( 0.25098, 0.25098, 0.25098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleBackground5" type="ColorRect" parent="."]
+margin_left = 1272.0
+margin_top = 448.0
+margin_right = 1395.0
+margin_bottom = 487.0
+color = Color( 0.25098, 0.25098, 0.25098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleBackground4" type="ColorRect" parent="."]
+margin_left = 32.0
+margin_top = 424.0
+margin_right = 568.0
+margin_bottom = 872.0
+color = Color( 0, 0.266667, 0.443137, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprites" type="Node" parent="."]
+
+[node name="Gems" type="Sprite" parent="Sprites"]
+position = Vector2( 720, 560 )
+scale = Vector2( 1.92808, 1.88388 )
+texture = ExtResource( 10 )
+vframes = 6
+hframes = 5
+frame = 5
+
+[node name="PlayerSprite" type="Sprite" parent="Sprites"]
+position = Vector2( 312, 344 )
 scale = Vector2( 2.79145, 2.79145 )
 texture = ExtResource( 4 )
 vframes = 16
 hframes = 13
 frame = 12
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerSprite"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprites/PlayerSprite"]
 anims/anim = SubResource( 3 )
 
-[node name="Play" type="Button" parent="."]
-margin_left = 528.0
-margin_top = 552.0
-margin_right = 912.0
-margin_bottom = 658.0
-rect_scale = Vector2( 1.52, 1.44 )
+[node name="Title" type="Sprite" parent="Sprites"]
+position = Vector2( 816, 56 )
+scale = Vector2( 0.369048, 0.290909 )
+texture = ExtResource( 3 )
+
+[node name="Skeleton" type="Sprite" parent="Sprites"]
+position = Vector2( 1224, 568 )
+scale = Vector2( 3.45653, 3.04001 )
+texture = ExtResource( 8 )
+
+[node name="Saw" type="Sprite" parent="Sprites"]
+position = Vector2( 1432, 592 )
+scale = Vector2( 0.384361, 0.346155 )
+texture = ExtResource( 7 )
+
+[node name="Heart" type="Sprite" parent="Sprites"]
+position = Vector2( 936, 560 )
+scale = Vector2( 1.92808, 1.88388 )
+texture = ExtResource( 9 )
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Instructions" type="Label" parent="Labels"]
+margin_left = 32.0
+margin_top = 432.0
+margin_right = 568.0
+margin_bottom = 688.0
 custom_fonts/font = SubResource( 5 )
-icon = ExtResource( 6 )
+text = "Here lies a castle that has been rigged up with enemies 
+and traps to deter you from progressing thorugh it.
+Why you may ask? Well, theres an old legend 
+that the richest people in town used that 
+castle as a vault for the most precious
+gems on the planet.
+
+Pull of this gem heist and you will live to share its powers."
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Controls" type="Label" parent="."]
-margin_left = 760.0
-margin_top = 416.0
-margin_right = 910.0
-margin_bottom = 537.0
-custom_fonts/font = SubResource( 7 )
-text = "  | Controls |
-A = Move Left
-D = Move Right
-W = Jump"
+[node name="Items" type="Label" parent="Labels"]
+margin_left = 784.0
+margin_top = 448.0
+margin_right = 840.0
+margin_bottom = 470.0
+rect_scale = Vector2( 1.71115, 1.44982 )
+custom_fonts/font = SubResource( 5 )
+text = "Items"
+align = 1
 valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hazards" type="Label" parent="Labels"]
+margin_left = 1272.0
+margin_top = 440.0
+margin_right = 1347.0
+margin_bottom = 474.0
+rect_scale = Vector2( 1.71115, 1.44982 )
+custom_fonts/font = SubResource( 5 )
+text = "Hazards"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Controls" type="Label" parent="Labels"]
+margin_left = 32.0
+margin_top = 688.0
+margin_right = 296.0
+margin_bottom = 872.0
+custom_fonts/font = SubResource( 5 )
+text = "  | Controls |
+  A = Move Left
+   D = Move Right
+W = Jump"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skeleton" type="Label" parent="Labels"]
+margin_left = 1168.0
+margin_top = 512.0
+margin_right = 1280.0
+margin_bottom = 709.0
+custom_fonts/font = SubResource( 5 )
+text = "| Skeleton |
+
+
+
+Fast
+Small
+Damage: 10
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Saw" type="Label" parent="Labels"]
+margin_left = 1384.0
+margin_top = 512.0
+margin_right = 1488.0
+margin_bottom = 759.0
+custom_fonts/font = SubResource( 5 )
+text = "| Saw |
+
+
+
+
+
+Idle
+Large
+Damage: 20
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Heart" type="Label" parent="Labels"]
+margin_left = 864.0
+margin_top = 512.0
+margin_right = 1014.0
+margin_bottom = 759.0
+custom_fonts/font = SubResource( 5 )
+text = "| Heart |
+
+
+Magical Item
+Heals for 25 health"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gem" type="Label" parent="Labels"]
+margin_left = 648.0
+margin_top = 512.0
+margin_right = 792.0
+margin_bottom = 759.0
+custom_fonts/font = SubResource( 5 )
+text = "| Gem |
+
+
+Objective
+Unknown Location
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+margin_left = 272.0
+margin_top = 744.0
+margin_right = 510.0
+margin_bottom = 801.0
+rect_scale = Vector2( 1.12, 1.44 )
+custom_fonts/font = SubResource( 7 )
+icon = ExtResource( 6 )
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
