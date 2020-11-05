@@ -23,8 +23,9 @@ void fragment() {
 }"
 
 [sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
 shader = SubResource( 1 )
-shader_param/scroll_speed = null
+shader_param/scroll_speed = 0.125
 
 [sub_resource type="Animation" id=3]
 resource_name = "anim"
