@@ -17,7 +17,13 @@ _global_script_class_icons={
 
 config/name="Tower Heist Escape"
 run/main_scene="res://src/TitleScreen.tscn"
+boot_splash/image="res://icon.png"
 config/icon="res://icon.png"
+
+[audio]
+
+channel_disable_threshold_db=0.0
+channel_disable_time=0.0
 
 [debug]
 
@@ -110,4 +116,5 @@ quality/driver/driver_name="GLES2"
 quality/2d/use_pixel_snap=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
+quality/reflections/high_quality_ggx=false
 environment/default_environment="res://default_env.tres"
