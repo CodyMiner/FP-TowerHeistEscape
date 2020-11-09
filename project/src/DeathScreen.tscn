@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://src/DeathScreen.gd" type="Script" id=1]
 [ext_resource path="res://assets/Title Screen/TitleScreenBackground.png" type="Texture" id=2]
@@ -13,6 +13,24 @@ outline_color = Color( 0, 0, 0, 1 )
 use_mipmaps = true
 use_filter = true
 font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://assets/Font/BlackCastleMF.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 45
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://assets/Font/BlackCastleMF.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 45
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = SubResource( 5 )
 
 [node name="DeathScreen" type="Node"]
 script = ExtResource( 1 )
@@ -43,21 +61,25 @@ __meta__ = {
 }
 
 [node name="Retry" type="Button" parent="."]
-margin_left = 642.194
-margin_top = 489.822
-margin_right = 970.194
-margin_bottom = 627.822
+margin_left = 761.294
+margin_top = 414.841
+margin_right = 897.294
+margin_bottom = 487.841
+custom_fonts/font = SubResource( 4 )
 text = "Retry"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Back" type="Button" parent="."]
-margin_left = 644.639
-margin_top = 697.094
-margin_right = 973.639
-margin_bottom = 859.094
+margin_left = 752.635
+margin_top = 542.275
+margin_right = 903.635
+margin_bottom = 632.275
+custom_fonts/font = SubResource( 6 )
 text = "Back"
+flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
