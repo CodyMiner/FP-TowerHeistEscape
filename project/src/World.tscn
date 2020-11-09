@@ -208,17 +208,16 @@ points = PoolVector2Array( 64, 64, 0, 64, 0, 0, 64, 0 )
 5/shapes = [  ]
 5/z_index = 0
 
-[sub_resource type="DynamicFontData" id=9]
+[sub_resource type="DynamicFontData" id=6]
 font_path = "res://assets/Font/BlackCastleMF.ttf"
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=7]
 outline_size = 1
 outline_color = Color( 0.027451, 0.027451, 0.027451, 1 )
 use_mipmaps = true
-font_data = SubResource( 9 )
+font_data = SubResource( 6 )
 
-[sub_resource type="Animation" id=6]
-resource_name = "move"
+[sub_resource type="Animation" id=8]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -234,8 +233,7 @@ tracks/0/keys = {
 "values": [ Vector2( 1268.27, 4079.89 ), Vector2( 1512.88, 4080.23 ), Vector2( 1268.27, 4079.89 ) ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "move"
+[sub_resource type="Animation" id=9]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -251,8 +249,7 @@ tracks/0/keys = {
 "values": [ Vector2( 367.824, 3952.31 ), Vector2( 797.165, 3951.75 ), Vector2( 367.824, 3952.31 ) ]
 }
 
-[sub_resource type="Animation" id=8]
-resource_name = "move"
+[sub_resource type="Animation" id=10]
 length = 2.0
 loop = true
 tracks/0/type = "value"
@@ -457,7 +454,7 @@ margin_left = 758.673
 margin_top = 86.2272
 margin_right = 842.673
 margin_bottom = 105.227
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 7 )
 text = "You Found It!"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -469,19 +466,19 @@ __meta__ = {
 position = Vector2( 1276.79, 4079.9 )
 
 [node name="EnemyAnim" type="AnimationPlayer" parent="Skeletons/Enemy"]
-anims/move = SubResource( 6 )
+anims/move = SubResource( 8 )
 
 [node name="Enemy2" parent="Skeletons" instance=ExtResource( 6 )]
 position = Vector2( 461.801, 3952.19 )
 
 [node name="EnemyAnim2" type="AnimationPlayer" parent="Skeletons/Enemy2"]
-anims/move = SubResource( 7 )
+anims/move = SubResource( 9 )
 
 [node name="Enemy3" parent="Skeletons" instance=ExtResource( 6 )]
 position = Vector2( 1083.37, 3567.72 )
 
 [node name="EnemyAnim3" type="AnimationPlayer" parent="Skeletons/Enemy3"]
-anims/move = SubResource( 8 )
+anims/move = SubResource( 10 )
 
 [node name="Enemy4" parent="Skeletons" instance=ExtResource( 6 )]
 position = Vector2( 424.751, 3248.08 )
@@ -600,7 +597,7 @@ position = Vector2( 27.8032, 4336.11 )
 
 [node name="ArcadeLoop" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
-volume_db = -30.0
+volume_db = -20.0
 [connection signal="body_shape_entered" from="Skeletons/Enemy" to="." method="_on_Enemy_body_shape_entered"]
 [connection signal="body_shape_entered" from="Skeletons/Enemy2" to="." method="_on_Enemy_body_shape_entered"]
 [connection signal="body_shape_entered" from="Skeletons/Enemy3" to="." method="_on_Enemy_body_shape_entered"]
