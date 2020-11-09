@@ -1,5 +1,6 @@
 extends Node
 
+onready var player = $Player
 onready var music = $ArcadeLoop
 
 func _ready():
@@ -8,21 +9,21 @@ func _ready():
 	_start_saw_anim()
 
 func _on_Enemy_body_shape_entered(body_id, body, body_shape, area_shape):
-	$Player._damage(10)
+	player._damage(10)
 
 func _on_Saw_body_entered(body):
-	$Player._damage(20)
+	player._damage(20)
 
 func _on_Heart_body_entered(body):
-	$Player._heal(20)
+	player._heal(20)
 	$Hearts/Heart.queue_free()
 
 func _on_Heart2_body_entered(body):
-	$Player._heal(25)
+	player._heal(20)
 	$Hearts/Heart2.queue_free()
 
 func _on_Heart3_body_entered(body):
-	$Player._heal(25)
+	player._heal(20)
 	$Hearts/Heart3.queue_free()
 
 func _on_RedDiamond_body_entered(body):
