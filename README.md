@@ -24,7 +24,7 @@ The juiciness that I encorporated was a combination of a few different things to
 - [X] B-5: Clear progress has been made on the game with respect to the project plan.
 - [X] A-1: The source code contains no warnings: all warnings are properly addressed, not just ignored.
 - [X] A-2: The game includes the conventional player experience loop of title, gameplay, and ending.
-- [ ] A-3: Earn <em>N</em>*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
+- [X] A-3: Earn <em>N</em>*&lceil;<em>P</em>/2&rceil; stars, where <em>N</em> is the iteration number and <em>P</em> is the number of people on the team.
 - [ ] ⭐ Include a dynamic (non-static) camera
 - [ ] ⭐ Incorporate parallax background scrolling
 - [ ] ⭐ Use paper doll animations
@@ -41,6 +41,8 @@ The juiciness that I encorporated was a combination of a few different things to
 - [ ] ⭐ Add a pause menu that includes, at minimum, the ability to resume or return to the main menu
 - [ ] ⭐ The game is released publicly on <code>itch.io</code>, with all the recommended accompanying text, screenshots, gameplay videos, <i>etc.</i>
 
+Therefore this Iteration earns an A.
+
 # Third-Party Assets
 
 Images are from "RPG Base". Created by Kenny.nl, CC0 1.0 Universal
@@ -54,10 +56,6 @@ Source: https://opengameart.org/content/tiny-skelly-rpg-enemies-rework
 
 Images are from "Gems". Created by Jianhui999, CC Attribution-ShareAlike 3.0 Unported
 Source: https://opengameart.org/content/32x32-pixel-gems
-
-Blackwood Castle Font. Created by Dieter Steffmann. For non-commercial use.
-Download Source: https://www.dafont.com/blackwood-castle.font
-Credit: http://www.steffmann.de/wordpress/
 
 Images are from "TRAPS". Created by LarryIRL. CC0 1.0 Universal
 Source: https://opengameart.org/content/industrial-traps-2d-sidescroller
@@ -76,3 +74,7 @@ Source: https://freesound.org/people/LittleRobotSoundFactory/sounds/270326/
 
 Sounds are from "FreeSound". Created by Prof.Mudkip, CC0 1.0 Universal.
 Source: https://freesound.org/people/Prof.Mudkip/sounds/422087/
+
+Blackwood Castle Font. Created by Dieter Steffmann. For non-commercial use.
+Download Source: https://www.dafont.com/blackwood-castle.font
+Credit: http://www.steffmann.de/wordpress/
