@@ -1,7 +1,7 @@
 # CS315 Final Project: Tower Heist Escape
 ### By: Austin Foster
 
-Play the game: [Here] (https://bsu-cs315.github.io/FP-TowerHeistEscape/)
+Play the game: [Here](https://bsu-cs315.github.io/FP-TowerHeistEscape/)
 
 # Project Report
 This project was a test of my skills as a creative minded person because it gave me a sense of the depth that can be obtained through more and more knowledge of the Godot engine. I feel as though the product of my work is very satisfying to me to see how it came together. Mainly the title screen is what I thought came out good, only now am I having the afterthought of having to rearrange things if I plan to add mobile controls. Other than that I think this project is a good testament to the progress I have made, especially opening back up my Project 0 and realizing how far I have come and how much more I can get done with the time I spend working with Godot. Besides all that I really enjoyed doing this honestly I had quite a bit of creative/artistic freedom and I tend to enjoy things like that. The code for Player.gd was also something that I thought took awhile with a lot of googling and stackoverflow to get the health system to be adequate enough for me. The last thing to take note of and hopefully you read this before playing the game, but the working Scrolling background only works if I compile the game on my local machine so maybe do that for full effect? Not sure if it qualifies for “parallax” or not so some feedback on that would be great. Can’t wait for Iteration 2!
